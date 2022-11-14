@@ -45,6 +45,7 @@ Svi parametri nalaze se u <b>xparameters.h</b> headeru.
    signal mask : std_logic_vector(0 to 1);    
    signal masked_data : std_logic_vector(0 to 7); 
    mask <= slv_reg0(30 to 31);
+  
   with mask select
 		masked_data <=  "0000" & "0000" when "00",
 						        "0000" & data_in(4 to 7) when "01",
