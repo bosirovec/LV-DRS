@@ -37,7 +37,7 @@ Svi parametri nalaze se u <b>xparameters.h</b> headeru.
   <li>Dodat instancu komponente - (pod LV1 piše kako)</li>
 </ol>
 
-## Pojašnjenje VHDL koda u 8_1:
+#### Pojašnjenje VHDL koda u 8_1:
 ````
 signal mask : std_logic_vector(0 to 1);    
 signal masked_data : std_logic_vector(0 to 7); 
@@ -60,7 +60,7 @@ U ovisnosti o <b>zadnja 2 bita slave registra0 </b> radit ce ili jedan ili drugi
 <b>Masku</b> cemo citati sa buttona, <b>Masked data</b> biti ce vrijednost sa switcheva, ali ona ce se slat u ovisnosti upaljenom ili ugasenom kanalu.
 
 
-## Pojašnjenje VHDL koda u 8_3:
+#### Pojašnjenje VHDL koda u 8_3:
 ````
   signal mask : std_logic;
   signal output : std_logic_vector(0 to 4);
@@ -77,6 +77,6 @@ Inputi su <b>4bitni</b> pa ih treba castat u <b>5bitne</b> - to se napravi tako 
 npr 15 = 1111 - konkaterniramo 0 ispred: 0'&'1111 = 01111 - sad je 5bita a i dalje je to 15
 
 Kada je u registru 0, zbrajaj - kada je 1, oduzimaj
-## Pojašnjenje C koda u 8_3:
+#### Pojašnjenje C koda u 8_3:
 Dostupno u LV2\SDK\lv2_64\src\8_3.c
 
