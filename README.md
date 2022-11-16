@@ -80,3 +80,28 @@ Kada je u registru 0, zbrajaj - kada je 1, oduzimaj
 #### Pojašnjenje C koda u 8_3:
 Dostupno u LV2\SDK\lv2_64\src\8_3.c
 
+
+
+
+# LV3
+
+6.1.
+
+Izlaz je podjeljen na 4 djela output(15-12), 11-8, 7-4, 3-0.
+Input podijeljen na 2x4 switcha - sa ta 2 seta pišemo na dva od 4 outputa - na druga 2 seta hardkodamo neku vrijednost.
+
+upper mux - gordnji
+
+lower mux - donji
+
+
+6.2.
+
+Prvi dio inputa: 
+
+4 desna switcha - sluze da bi generirao broj
+4 lijeva switcha - govore u koji ces dio outputa storeat broj
+
+npr za stanje switcheva "1000 1111" pišeš F u skroz lijevi 8bitni segment
+
+6.3. povežes ova 2
